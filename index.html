@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome scc -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- bootstrap scc -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- my style scc -->
+    <link rel="stylesheet" href="css/mystyle.css">
+    <title>project management system</title>
+   
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h1>management system</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, omnis!</p>
+        </div>
+        <div class="alrt">
+            
+        </div>
+        <div class="inputs">
+            <div>
+                <input type="text" required class="form-control" id="title" placeholder="title">
+            </div>
+            <div class="price">
+                <input onkeyup="getTotal()" type="number"  class="form-control" id="price"    placeholder="price">
+                <input onkeyup="getTotal()" type="number"  class="form-control" id="taxes"    placeholder="taxes">
+                <input onkeyup="getTotal()" type="number"  class="form-control" id="ads"      placeholder="ads">
+                <input onkeyup="getTotal()" type="number"  class="form-control" id="discount" placeholder="discount">
+                <small class="btn-dangerr" id="totle"></small>
+            </div>
+            <div class="count">
+                <input type="number" class="form-control" id="count" placeholder="count">
+                <input type="text" class="form-control" id="category" placeholder="category">
+                <input type="submit" id="submit" class="btn btn-primary w-100" value="creat" >
+            </div>
+        </div>
+     
+
+
+    <div class="outputs">
+        <div class="searchBlock">
+            <div class="input-group mb-3">
+                <input type="text" onkeyup="searchData(this.value)" class="form-control" id="search" placeholder="search">
+            </div>
+            <div class="btnSearch">
+                <button type="button" onclick="getSearch(this.id)" id="searchTitle" class="btn btn-primary ">search by title</button>
+                <button type="button" onclick="getSearch(this.id)" id="searchCategory" class="btn btn-primary">search by category</button>
+            </div>
+        </div>
+        <!-- start table -->
+        <div id="deleteAll"></div>
+        <div class="table">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">title</th>
+                    <th scope="col">price</th>
+                    <th scope="col">taxes</th>
+                    <th scope="col">ads</th>
+                    <th scope="col">discount</th>
+                    <th scope="col">totle</th>
+                    <th scope="col">category</th>
+                    <th scope="col">update</th>
+                    <th scope="col">delete</th>
+                    <!-- <th scope="col">Handle</th> -->
+                  </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+              </table>
+        </div>
+        
+        <!-- end table -->
+    </div>
+</div>
+
+
+
+    <!-- fontawesome js -->
+    <script src="js/all.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- jquery  -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <!-- myscript js -->
+    <script src="js/myscript.js"></script>
+</body>
+</html>

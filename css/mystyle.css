@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+/* .btn-primary{
+    background-color: rgb(6, 26, 37);
+    border: none;
+} */
+.btn-dangerr{
+    background-color: #dc3545;
+    color: aliceblue;
+    border-radius: 5px;
+    line-height: 40px;
+    font-size: 1.1rem;
+}
+body{
+    background-color: #222;
+    color: aliceblue;
+    text-align: center;
+}
+
+.inputs input,
+.searchBlock input{
+    background-color:#111;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+.inputs input:focus,
+.inputs input:hover{
+    background-color:rgb(0, 0, 0);
+    color: #fff;
+    border: none;
+}
+.inputs .price{
+    margin:10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.inputs .price input{
+  width: 21%;
+}
+.inputs .price #totle{
+  width: 11%;
+}
+.inputs .price #totle::before{
+  content: "Total: ";
+}
+.inputs .count #count{
+    margin-bottom: 10px;
+}
+.inputs .count #submit{
+    margin: 10px 0;
+    transition: .4s;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    padding: 5px;
+    background-color: #0d6efd;
+}
+.inputs .count #submit:hover{
+    letter-spacing: 1px;
+    background-color: #0453ca;
+}
+
+.searchBlock input:focus,
+.searchBlock input:hover{
+    background-color:rgb(0, 0, 0);
+    color: #fff;
+    border: none;
+}
+.searchBlock .btnSearch{
+    display: flex;
+    justify-content: space-between;
+}
+.searchBlock .btnSearch button{
+    width: 45%;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+.outputs table{
+    color: aliceblue;
+    margin-top: 20px;
+}
+.outputs table th{
+    text-transform: uppercase;
+}
+#deleteAll{
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+.alert-danger{
+    background-color: rgb(220, 53, 69);
+    border: none;
+    color: #fff;
+}
